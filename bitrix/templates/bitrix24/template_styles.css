@@ -92,7 +92,7 @@ input::-ms-clear {display: none;}
 }
 
 #header {
-	background: #535c69;
+	background: #6ebdbb;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	height: 63px;
 	min-width: 1100px;
@@ -375,7 +375,7 @@ td.bx-layout-inner-inner-cont {
 	border-radius: 17px;
 	margin: 0 25px 0 0;
 	padding: 0 14px;
-	background-color: #717a84;
+	background-color: #65adad;
 	-webkit-transition: background-color 0.3s linear;
 	transition: background-color 0.3s linear;
 }
@@ -401,14 +401,14 @@ td.bx-layout-inner-inner-cont {
 }
 
 .header-search-input::-webkit-input-placeholder {
-	color:#a5adb3;
+	color:#f9fcfc;
 }
 .header-search-input::-moz-placeholder {
-	color: #a5adb3;
+	color: #f9fcfc;
 	opacity:  1;
 }
 .header-search-input:-ms-input-placeholder {
-	color: #a5adb3;
+	color: #f9fcfc;
 }
 
 .header-search-active .header-search-inner {
@@ -519,10 +519,10 @@ td.bx-layout-inner-inner-cont {
 }
 
 .timeman-block:hover .timeman-background {
-	background: #78808b;
+	background: #65adad;
 }
 .timeman-block-active .timeman-background {
-	background-color: #3d4653 !important;
+	background-color: #407e7e !important;
 	border-color: #838b93 !important;
 }
 
@@ -775,7 +775,7 @@ td.bx-layout-inner-inner-cont {
 }
 
 .user-block:hover {
-	background-color: #78808b;
+	background-color: #65adad;
 }
 
 .header-upgrade-btn .user-block {
@@ -794,7 +794,7 @@ td.bx-layout-inner-inner-cont {
 }
 
 .user-block-active {
-	background: #3d4653 !important;
+	background: #407e7e !important;
 }
 
 .user-default-avatar {
