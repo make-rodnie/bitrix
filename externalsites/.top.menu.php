@@ -1,0 +1,151 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Home", 
+		"/externalsites/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Workgroups", 
+		"/externalsites/workgroups/", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('Workgroups')" 
+	),
+	Array(
+		"Company Structure", 
+		"/company/vis_structure.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Find Employee", 
+		"/company/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"WRS Contacts", 
+		"/externalsites/wrs-contacts.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"BI:Radix", 
+		"https://wood.biradix.com/#/login", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Bluemoon", 
+		"https://www.bluemoon.com/products/forms_online/login.php", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Certipay", 
+		"https://www.mycertipay.com/Secure/EmployeeInfo.aspx", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"eLearning", 
+		"http://woodresidential.yardielearning.com/", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Fed-Ex", 
+		"http://www.fedex.com/", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Kingsley", 
+		"http://www.kingsleyportal.com/", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Lead Tracking Solutions (PopCard)", 
+		"http://corp.ltsolutions.com/", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Mentors", 
+		"https://www.wood-connect.com/stream/mentor-s/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"On-Site", 
+		"https://www.on-site.com/", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"RentCafé Site Manager", 
+		"http://www.rentcafe.com/sitemanager/login.aspx", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Review Trackers", 
+		"https://app.reviewtrackers.com/login?redirect=%2Fdashboard%3Ffrom%3D2017-03-01%26to%3D2017-08-14", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"SOP – Standard Operating Procedures", 
+		"https://sop3.thestrategicsolution.com/default.aspx?u=WoodResidentialTeamMember&p=allWoodResidentialTeam1034", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Timeco", 
+		"https://timeco-login.timeco.com/auth/login.aspx?ReturnUrl=%2f", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"WRS Open Positions", 
+		"https://woodresidential.applicantpool.com/jobs/", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Yardi Voyager", 
+		"https://www.yardiasp14.com/15652wood/pages/login.aspx", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Yardi Voyager Plus (RentCafé CRM)", 
+		"https://www.yardiasp14.com/15652vplus/login", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	)
+);
+?>

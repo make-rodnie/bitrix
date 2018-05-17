@@ -1,0 +1,866 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Mentor's");
+?><br>
+<table cellpadding="0" cellspacing="0" border="1">
+ <colgroup><col> <col> <col> <col> </colgroup>
+<tbody>
+<tr>
+	<td style="text-align: center;">
+ <b>Mentor name </b>
+	</td>
+	<td style="text-align: center;">
+ <b>
+		Position </b>
+	</td>
+	<td style="text-align: center;">
+ <b>
+		Property </b>
+	</td>
+	<td style="text-align: center;">
+ <b>
+		Geography</b>
+	</td>
+</tr>
+<tr>
+	<td>
+ <b>WEST</b>
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 Michelle Murr&nbsp;
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Paradise Ridge
+	</td>
+	<td>
+		 Arizona&nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 Melissa Rankin
+	</td>
+	<td>
+		 Assistant Director
+	</td>
+	<td>
+		 Alchemy
+	</td>
+	<td>
+		 San Francisco
+	</td>
+</tr>
+<tr>
+	<td>
+		 Kim Maurer
+	</td>
+	<td>
+		 Assistant Director
+	</td>
+	<td>
+		 Block 17
+	</td>
+	<td>
+		 Oregon
+	</td>
+</tr>
+<tr>
+	<td>
+		 Hans Saucier
+	</td>
+	<td>
+		 Maintenance
+	</td>
+	<td>
+		 Block 17
+	</td>
+	<td>
+		 Oregon
+	</td>
+</tr>
+<tr>
+	<td>
+		 Francisco Soriano
+	</td>
+	<td>
+		 Maintenance
+	</td>
+	<td>
+		 Warner
+	</td>
+	<td>
+		 California
+	</td>
+</tr>
+<tr>
+	<td>
+		 Christian Webber
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Fillmore
+	</td>
+	<td>
+		 Arizona
+	</td>
+</tr>
+<tr>
+	<td>
+		 Lindsey Schultz
+	</td>
+	<td>
+		 Assistant Director
+	</td>
+	<td>
+		 Paradise Ridge
+	</td>
+	<td>
+		 Arizona
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+ <b>CENTRAL</b>
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 Jennifer Hilton
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Roxbury
+	</td>
+	<td>
+		 Dallas
+	</td>
+</tr>
+<tr>
+	<td>
+		 Ricky Morales&nbsp;
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Flats at Alta Leftbank
+	</td>
+	<td>
+		 Dallas
+	</td>
+</tr>
+<tr>
+	<td>
+		 Tara Andrews
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Pinehurst
+	</td>
+	<td>
+		 Denver
+	</td>
+</tr>
+<tr>
+	<td>
+		 Deana Payne
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Heights
+	</td>
+	<td>
+		 Houston
+	</td>
+</tr>
+<tr>
+	<td>
+		 Steve Steck&nbsp;
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Gateway Station
+	</td>
+	<td>
+		 Salt Lake
+	</td>
+</tr>
+<tr>
+	<td>
+		 Jessina Lentfer
+	</td>
+	<td>
+		 Assistant Director
+	</td>
+	<td>
+		 Pinehurst
+	</td>
+	<td>
+		 Denver
+	</td>
+</tr>
+<tr>
+	<td>
+		 Lindsay Castro
+	</td>
+	<td>
+		 Assistant Director
+	</td>
+	<td>
+		 Palisades
+	</td>
+	<td>
+		 Dallas
+	</td>
+</tr>
+<tr>
+	<td>
+		 Jonathan Hammer-Sparks
+	</td>
+	<td>
+		 Assistant Director
+	</td>
+	<td>
+		 Heights
+	</td>
+	<td>
+		 Houston
+	</td>
+</tr>
+<tr>
+	<td>
+		 Jessica Douglas
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Grove @ City Center
+	</td>
+	<td>
+		 Denver
+	</td>
+</tr>
+<tr>
+	<td>
+		 Jessica Davis&nbsp;
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Farmers Market
+	</td>
+	<td>
+		 Dallas&nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+ <b>EAST</b>
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 Christy Eberts&nbsp;
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Midtown
+	</td>
+	<td>
+		 Atlanta
+	</td>
+</tr>
+<tr>
+	<td>
+		 Daniel Guillaro
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Midtown
+	</td>
+	<td>
+		 Atlanta
+	</td>
+</tr>
+<tr>
+	<td>
+		 Samala Walker
+	</td>
+	<td>
+		 Leasing&nbsp;
+	</td>
+	<td>
+		 Midtown
+	</td>
+	<td>
+		 Atlanta
+	</td>
+</tr>
+<tr>
+	<td>
+		 Tavia Hughes
+	</td>
+	<td>
+		 Assistant Manager
+	</td>
+	<td>
+		 Jonquil
+	</td>
+	<td>
+		 Atlanta
+	</td>
+</tr>
+<tr>
+	<td>
+		 Amy Voight
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Kaiser Park
+	</td>
+	<td>
+		 Maryland
+	</td>
+</tr>
+<tr>
+	<td>
+		 Britney Brautigan&nbsp;
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Kaiser Park
+	</td>
+	<td>
+		 Maryland
+	</td>
+</tr>
+<tr>
+	<td>
+		 Sam Rabel
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Rialto
+	</td>
+	<td>
+		 Orlando
+	</td>
+</tr>
+<tr>
+	<td>
+		 Rachel Brown
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Evolution
+	</td>
+	<td>
+		 Maryland
+	</td>
+</tr>
+<tr>
+	<td>
+		 Eric Vie
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Walnut Ridge
+	</td>
+	<td>
+		 Maryland
+	</td>
+</tr>
+<tr>
+	<td>
+		 Devon Winkie
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 616
+	</td>
+	<td>
+		 Raliegh
+	</td>
+</tr>
+<tr>
+	<td>
+		 Carrissa McKnight
+	</td>
+	<td>
+		 Leasing
+	</td>
+	<td>
+		 Midtown
+	</td>
+	<td>
+		 Atlanta
+	</td>
+</tr>
+<tr>
+	<td>
+		 Monica Briant
+	</td>
+	<td>
+		 Director
+	</td>
+	<td>
+		 Magnolia
+	</td>
+	<td>
+		 Tampa
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+<tr>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+	<td>
+		 &nbsp;
+	</td>
+</tr>
+</tbody>
+</table><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

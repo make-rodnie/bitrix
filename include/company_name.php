@@ -1,0 +1,1 @@
+<img width="431" alt="WRS logo high def.png" src="/upload/medialibrary/04b/WRS%20logo%20high%20def.png" height="112" title="WRS logo high def.png">
