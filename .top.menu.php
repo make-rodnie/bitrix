@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Company", 
+		"/about/", 
+		Array(), 
+		Array(), 
+		"false" 
+	),
+	Array(
+		"Employees", 
+		"/company/", 
+		Array(), 
+		Array(), 
+		"false" 
+	),
+	Array(
+		"Mentor's", 
+		"https://wood-connect.com/stream/mentor-s/index.php?sphrase_id=296", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"SOP – Standard Operating Procedures", 
+		"https://sop3.thestrategicsolution.com/default.aspx?u=WoodResidentialTeamMember&p=allWoodResidentialTeam1034", 
+		Array(), 
+		Array("NEW_PAGE"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Job Vacancies", 
+		"/about/career.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

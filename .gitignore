@@ -100,6 +100,6 @@ yourinvoicehtml/pages/
 mockups/
 *.bk.*
 
-
+bitrix/upload
 bitrix/php_interface/make_lang/backup/
 bitrix/php_interface/include/make_backup/
