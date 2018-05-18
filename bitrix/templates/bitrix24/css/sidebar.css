@@ -108,7 +108,7 @@
 	padding: 14px 0 11px 17px;
 }
 .sidebar-widget-item:hover {
-	background-color: #f8fafb;
+	background-color: #7eb9b9;
 	border-bottom: none;
 	text-decoration: none;
 }
@@ -389,9 +389,11 @@
 	margin-bottom: 3px;
 	padding: 3px 0 0;
 	width: 100%;
+	color: #fff;
 }
+
 .user-birth-date {
-	color: #80868e;
+	color: #fff;
 	display: inline-block;
 	font-size: 14px;
 	font-weight: normal;
