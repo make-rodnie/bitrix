@@ -4714,3 +4714,16 @@ a{
 .feed-add-post-form-link-active {
 	color: #fff !important;
 }
+.blog-p-user-name .blog-p-user-name-extranet{
+	color: #fff;
+}
+.feed-post-user-name:link, .feed-post-user-name:visited, .feed-post-user-name:active{
+	color: #fff !important;
+
+}
+.blog-p-user-name-extranet {
+    color: #FFFFFF !important;
+}
+.feed-post-item a{
+	color: #fff !important;
+}
