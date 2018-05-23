@@ -1,20 +1,26 @@
-<nav class="navbar navbar-default" role="navigation">
+ <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
-  <div class="navbar-header">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><strong>DIGI</strong> Shop</a>
-</div>
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-           <ul class="nav navbar-nav navbar-right">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                
+                <a class="navbar-brand" href="/webshop"><strong>DIGI</strong> Shop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/webshop/basket.php">Check basket</a>
+                        <? $APPLICATION->IncludeComponent("mycomp:sale.basket.basket.line");?></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signup</a></li>
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">24x7 Support <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -38,5 +44,7 @@
                     <button type="submit" class="btn btn-primary">Search</button>
                 </form>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
-</nav>
+        <!-- /.container-fluid -->
+    </nav>
