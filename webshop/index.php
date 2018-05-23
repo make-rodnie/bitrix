@@ -392,7 +392,7 @@ if ($ar_res = $db_res->Fetch())
                                 <h3><a href="#">'.$ar['NAME'].' </a></h3>
                                 <p>Price : <strong>'. CurrencyFormat($ar_res["PRICE"],$ar_res["CURRENCY"]).'</strong>  </p>
                                 <p>In stock: '.$quant.'</p>
-                                <p><a target="_blank" href="'.SITE_TEMPLATE_PATH.'/add2cart.php?ID='.$idar.'" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
+                                <p><a href="'.SITE_TEMPLATE_PATH.'/add2cart.php?ID='.$idar.'" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
                             </div>
                             </div>
                     </div>';

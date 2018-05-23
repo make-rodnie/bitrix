@@ -16,7 +16,7 @@
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/webshop/basket.php">Check basket</a>
+                    <li><a target="_blank" href="/webshop/basket.php">Check basket</a>
                         <? $APPLICATION->IncludeComponent("mycomp:sale.basket.basket.line");?></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Signup</a></li>
