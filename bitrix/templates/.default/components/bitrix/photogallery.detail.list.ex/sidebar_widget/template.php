@@ -63,7 +63,7 @@ $ucid = CUtil::JSEscape($arParams["~UNIQUE_COMPONENT_ID"]);
 
 <div class="sidebar-widget sidebar-widget-photo-gallery">
 	<div class="sidebar-widget-top">
-		<div class="sidebar-widget-top-title"><?=GetMessage("PHOTO_WIDGET_TITLE")?></div>
+		<div class="sidebar-widget-top-title">Banner</div>
 	</div>
 
 	<?
@@ -74,14 +74,19 @@ $ucid = CUtil::JSEscape($arParams["~UNIQUE_COMPONENT_ID"]);
 	</div>
 	<?
 	endif;
+	$bannerchosenone = rand(0, count($arResult["ELEMENTS_LIST"])-1);
 	?>
 
-	<div class="photo-items-list photo-photo-list photo-items-slider" id="photo_list_<?= htmlspecialcharsEx($arParams["~UNIQUE_COMPONENT_ID"])?>">
+	<a href=<? echo '/stream/bannerdetails.php?id='.$bannerchosenone; ?>><div class="photo-items-list photo-photo-list photo-items-slider" id="photo_list_<?= htmlspecialcharsEx($arParams["~UNIQUE_COMPONENT_ID"])?>">
 	<?/* Used to show 'More photos' in js*/
+
+
 	if($_REQUEST['get_elements_html']){ob_start();}?>
 	<?
 	foreach ($arResult["ELEMENTS_LIST"] as $key => $arItem)
 	{
+		
+
 		$arItem["TITLE"] = htmlspecialcharsEx($arItem["~PREVIEW_TEXT"]);
 		$alt = $arItem["TITLE"];
 		if ($alt === '')
@@ -98,14 +103,18 @@ $ucid = CUtil::JSEscape($arParams["~UNIQUE_COMPONENT_ID"]);
 		$arItem["TITLE"] = trim($arItem["TITLE"], " -");
 
 		$src = $arItem["BIG_PICTURE"]["SRC"];
+
+		$bannername[] = $alt;
+        $bannerpic[] = $src;
+
 	?>
-		<img src="<?=$src?>" border="0" alt="<?=$alt?>"/>
+	
 	<?
 	};
-
+?><img src="<?=$bannerpic[$bannerchosenone]?>" border="0" alt="<?=$bannername[$bannerchosenone]?>"/><?
 	if($_REQUEST['get_elements_html']){$elementsHTML = ob_get_clean();}
 	?>
-	</div>
+	</div></a>
 	<div class="empty-clear"></div>
 </div><!-- end sidebar-widget-photo-gallery -->
 

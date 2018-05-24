@@ -7,13 +7,11 @@ $APPLICATION->SetPageProperty("title", htmlspecialcharsbx(COption::GetOptionStri
 if (SITE_TEMPLATE_ID !== "bitrix24")
 	return;
 ?>
+
 <?
-$APPLICATION->IncludeComponent(
-	"bitrix:socialnetwork.log.ex", 
-	"", 
-	Array(
-		"PATH_TO_SEARCH_TAG" => SITE_DIR."search/?tags=#tag#",
-		"SET_NAV_CHAIN" => "Y",
+$APPLICATION->IncludeComponent("bitrix:socialnetwork.log.ex", "template1", Array(
+	"PATH_TO_SEARCH_TAG" => SITE_DIR."search/?tags=#tag#",
+		"SET_NAV_CHAIN" => "Y",	// Set Breadcrumbs
 		"SET_TITLE" => "Y",
 		"ITEMS_COUNT" => "32",
 		"NAME_TEMPLATE" => CSite::GetNameFormat(),
@@ -26,7 +24,7 @@ $APPLICATION->IncludeComponent(
 		"SHOW_EVENT_ID_FILTER" => "Y",
 		"SHOW_SETTINGS_LINK" => "Y",
 		"SET_LOG_CACHE" => "Y",
-		"USE_COMMENTS" => "Y",
+		"USE_COMMENTS" => "Y",	// Show comments as event related
 		"BLOG_ALLOW_POST_CODE" => "Y",
 		"BLOG_GROUP_ID" => "#BLOG_GROUP_ID#",
 		"PHOTO_USER_IBLOCK_TYPE" => "photos",
@@ -46,14 +44,59 @@ $APPLICATION->IncludeComponent(
 		"SHOW_RATING" => "",
 		"RATING_TYPE" => "",
 		"NEW_TEMPLATE" => "Y",
-		"AVATAR_SIZE" => 100,
-		"AVATAR_SIZE_COMMENT" => 100,
-		"AUTH" => "Y",
-	)
+		"AVATAR_SIZE" => "100",
+		"AVATAR_SIZE_COMMENT" => "100",
+		"AUTH" => "Y"
+	),
+	false
 );
 ?>
+<!-- <div id="sidebar">
+<div class="sidebar-widget sidebar-widget-photo-gallery">
+	<div class="sidebar-widget-top">
+		<div class="sidebar-widget-top-title">Banner</div>
+	</div>
 
-<?$APPLICATION->IncludeComponent(
+	
+	<div class="bx-wrapper" style="max-width: 280px;">
+		<div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 391px;">
+			<div class="photo-items-list photo-photo-list photo-items-slider" id="photo_list_bxph_list_0" style="width: auto; position: relative;">
+				 <?
+        //         $banner = 33;
+        //             $arFilter = Array(
+        //     "IBLOCK_ID" => $banner
+        // ); 
+
+        // $ban = CIBlockElement::GetList(Array(),$arFilter);
+        // $bannerchosenone;
+        // $bannerpic = array();
+        // $bannername = array();
+        // $bannerpreview = array();
+        // while ($bannerres = $ban->GetNext())
+        //     {
+        //         $bannername[] = $bannerres['NAME'];
+        //         $bannerpic[] = $bannerres['PREVIEW_PICTURE'];
+        //         $bannerpreview[] = $bannerres['PREVIEW_TEXT'];
+        //     }
+
+        //     $bannerchosenone = rand(1, count($bannername));
+
+        //         $pic = CFile::GetPath($bannerpic[$bannerchosenone]);
+        //         echo $bannerchosenone.'
+        //         <a href="#">
+        //                         <img src="' . $pic . '" alt="'.$bannerpreview[$bannerchosenone].'" >
+        //                     </a>';
+
+                ?>
+		</div>
+	</div>
+</div>
+	<div class="empty-clear"></div>
+</div>
+</div> -->
+
+<?
+$APPLICATION->IncludeComponent(
 	"bitrix:photogallery.detail.list.ex",
 	"sidebar_widget",
 	Array(
@@ -100,7 +143,60 @@ $APPLICATION->IncludeComponent(
 		"USE_PERMISSIONS" => "N",
 		"VOTE_NAMES" => array(0=>"1",1=>"2",2=>"3",3=>"4",4=>"5",5=>"",)
 	)
-);?>
+);
+?>
+
+
+<?
+$APPLICATION->IncludeComponent(
+	"bitrix:photogallery.detail.list.ex",
+	"sidebar_widget",
+	Array(
+		"ADDITIONAL_SIGHTS" => array(),
+		"BEHAVIOUR" => "SIMPLE",
+		"CACHE_TIME" => "3600",
+		"CACHE_TYPE" => "A",
+		"COMPONENT_TEMPLATE" => "sidebar_widget",
+		"DATE_TIME_FORMAT" => "m/d/Y",
+		"DETAIL_SLIDE_SHOW_URL" => "slide_show.php?SECTION_ID=#SECTION_ID#&ELEMENT_ID=#ELEMENT_ID#",
+		"DETAIL_URL" => "detail.php?SECTION_ID=#SECTION_ID#&ELEMENT_ID=#ELEMENT_ID#",
+		"DISPLAY_AS_RATING" => "rating",
+		"DRAG_SORT" => "Y",
+		"ELEMENT_LAST_TYPE" => "none",
+		"ELEMENT_SORT_FIELD" => "",
+		"ELEMENT_SORT_FIELD1" => "",
+		"ELEMENT_SORT_ORDER" => "asc",
+		"ELEMENT_SORT_ORDER1" => "asc",
+		"GALLERY_SIZE" => "",
+		"GALLERY_URL" => "gallery.php?USER_ALIAS=#USER_ALIAS#",
+		"GROUP_PERMISSIONS" => array(0=>"1",),
+		"IBLOCK_ID" => "33",
+		"IBLOCK_TYPE" => "banner",
+		"MAX_VOTE" => "5",
+		"NAME_TEMPLATE" => "",
+		"PAGE_ELEMENTS" => "8",
+		"PATH_TO_USER" => "/company/personal/user/#USER_ID#",
+		"PICTURES_SIGHT" => "",
+		"PROPERTY_CODE" => array(0=>"",1=>"",),
+		"RATING_MAIN_TYPE" => "",
+		"SEARCH_URL" => "search.php",
+		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "Y",
+		"SHOW_COMMENTS" => "N",
+		"SHOW_LOGIN" => "Y",
+		"SHOW_PAGE_NAVIGATION" => "bottom",
+		"SHOW_RATING" => "N",
+		"SHOW_SHOWS" => "N",
+		"THUMBNAIL_SIZE" => "280",
+		"USER_ALIAS" => $_REQUEST["USER_ALIAS"],
+		"USE_COMMENTS" => "N",
+		"USE_DESC_PAGE" => "Y",
+		"USE_PERMISSIONS" => "N",
+		"VOTE_NAMES" => array(0=>"1",1=>"2",2=>"3",3=>"4",4=>"5",5=>"",)
+	)
+);
+?>
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:intranet.bitrix24.banner",
