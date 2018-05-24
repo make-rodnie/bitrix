@@ -18,7 +18,7 @@ if (CModule::IncludeModule("catalog"))
 }
 }
 
-header('Location:/timeman/index.php/');
+header('Location:/webshop');
 // array (
 //                          array ( "NAME" => "Color" , "CODE" => "CLR" , "VALUE" => "red" ),
 //                          array ( "NAME" => "Size" , "VALUE " => " 25 " )

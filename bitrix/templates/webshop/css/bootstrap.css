@@ -5779,3 +5779,17 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.box2 {
+  display: inline-block;
+  margin: 1em;
+  color: #FFFFFF;
+}
+.auth{
+  position: inherit;
+}
+.log{
+  position: absolute;
+  top: 40px;
+  right: -100px;
+  background-color: #4E9AE7;
+}
