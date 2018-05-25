@@ -51,54 +51,11 @@ $APPLICATION->IncludeComponent("bitrix:socialnetwork.log.ex", "template1", Array
 	false
 );
 ?>
-<!-- <div id="sidebar">
-<div class="sidebar-widget sidebar-widget-photo-gallery">
-	<div class="sidebar-widget-top">
-		<div class="sidebar-widget-top-title">Banner</div>
-	</div>
-
-	
-	<div class="bx-wrapper" style="max-width: 280px;">
-		<div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 391px;">
-			<div class="photo-items-list photo-photo-list photo-items-slider" id="photo_list_bxph_list_0" style="width: auto; position: relative;">
-				 <?
-        //         $banner = 33;
-        //             $arFilter = Array(
-        //     "IBLOCK_ID" => $banner
-        // ); 
-
-        // $ban = CIBlockElement::GetList(Array(),$arFilter);
-        // $bannerchosenone;
-        // $bannerpic = array();
-        // $bannername = array();
-        // $bannerpreview = array();
-        // while ($bannerres = $ban->GetNext())
-        //     {
-        //         $bannername[] = $bannerres['NAME'];
-        //         $bannerpic[] = $bannerres['PREVIEW_PICTURE'];
-        //         $bannerpreview[] = $bannerres['PREVIEW_TEXT'];
-        //     }
-
-        //     $bannerchosenone = rand(1, count($bannername));
-
-        //         $pic = CFile::GetPath($bannerpic[$bannerchosenone]);
-        //         echo $bannerchosenone.'
-        //         <a href="#">
-        //                         <img src="' . $pic . '" alt="'.$bannerpreview[$bannerchosenone].'" >
-        //                     </a>';
-
-                ?>
-		</div>
-	</div>
-</div>
-	<div class="empty-clear"></div>
-</div>
-</div> -->
 
 <?
 $APPLICATION->IncludeComponent(
 	"bitrix:photogallery.detail.list.ex",
-	"sidebar_widget",
+	"sidebar_widget_original",
 	Array(
 		"ADDITIONAL_SIGHTS" => array(),
 		"BEHAVIOUR" => "SIMPLE",
@@ -174,7 +131,7 @@ $APPLICATION->IncludeComponent(
 		"IBLOCK_TYPE" => "banner",
 		"MAX_VOTE" => "5",
 		"NAME_TEMPLATE" => "",
-		"PAGE_ELEMENTS" => "8",
+		"PAGE_ELEMENTS" => "50",
 		"PATH_TO_USER" => "/company/personal/user/#USER_ID#",
 		"PICTURES_SIGHT" => "",
 		"PROPERTY_CODE" => array(0=>"",1=>"",),

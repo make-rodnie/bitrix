@@ -416,7 +416,8 @@ if(\Bitrix\Main\ModuleManager::isModuleInstalled('bitrix24'))
 		"USE_EXT" => "Y",
 		"DELAY" => "N",
 		"ALLOW_MULTI_SELECT" => "N",
-		"COMPONENT_TEMPLATE" => "left_vertical"
+		"COMPONENT_TEMPLATE" => "left_vertical",
+		"MENU_THEME" => "site"
 	),
 	false
 );
@@ -559,3 +560,4 @@ if(\Bitrix\Main\ModuleManager::isModuleInstalled('bitrix24'))
 												</div>
 											<?endif?>
 											<?CPageOption::SetOptionString("main.interface", "use_themes", "N"); //For grids?>
+
