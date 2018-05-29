@@ -7,7 +7,13 @@ $APPLICATION->SetPageProperty("title", htmlspecialcharsbx(COption::GetOptionStri
 if (SITE_TEMPLATE_ID !== "bitrix24")
 	return;
 ?>
+<?
+	$APPLICATION->IncludeComponent("mycomp:support.ticket.list", "gadget", 
+		Array(),
+	false
+);
 
+?>
 <?
 $APPLICATION->IncludeComponent("bitrix:socialnetwork.log.ex", "template1", Array(
 	"PATH_TO_SEARCH_TAG" => SITE_DIR."search/?tags=#tag#",
