@@ -27,10 +27,13 @@ if (array_key_exists("TICKETS", $arResult) && is_array($arResult["TICKETS"])):
 
 
 	shuffle($arResult["TICKETS"]);
-	foreach ($arResult["TICKETS"] as $arTicket):
+	
+	//for admin
+		if($USER->GetID() == 1):
+			foreach ($arResult["TICKETS"] as $arTicket):
 		$owner = '-'.$arTicket["OWNER_NAME"]."&nbsp".$arTicket["OWNER_LAST_NAME"];
-		//for admin
-		if ($arTicket['LAMP'] != 'grey' && $ticketcount <= 5 && $bAdmin == 'Y'):
+		
+		if ($arTicket['LAMP'] != 'grey' && $ticketcount != 5):
 		if (!$bFirst)
 		{
 			?><div class="support-ticket-line"></div><?
@@ -63,9 +66,18 @@ if (array_key_exists("TICKETS", $arResult) && is_array($arResult["TICKETS"])):
 	</div>
 		<?
 		$bFirst = false;
+		$ticketcount++;
 	endif;
+	
+	endforeach;
+endif;
+
 //not admin
-	if ($arTicket['LAMP'] != 'grey' && $ticketcount <= 5 && $bAdmin == 'N' && $arTicket['RESPONSIBLE_USER_ID'] == $USER->GetID() || $arTicket['LAMP'] != 'grey' && $ticketcount <= 5 && $bAdmin == 'N' && $arTicket['OWNER_USER_ID'] == $USER->GetID()):
+	if($USER->GetID() != 1):
+			foreach ($arResult["TICKETS"] as $arTicket):
+		$owner = '-'.$arTicket["OWNER_NAME"]."&nbsp".$arTicket["OWNER_LAST_NAME"];
+		
+		if ($arTicket['LAMP'] != 'grey' && $ticketcount != 5 && $arTicket['RESPONSIBLE_USER_ID'] == $USER->GetID() || $arTicket['LAMP'] != 'grey' && $ticketcount != 5 && $arTicket['OWNER_USER_ID'] == $USER->GetID()):
 		if (!$bFirst)
 		{
 			?><div class="support-ticket-line"></div><?
@@ -98,14 +110,14 @@ if (array_key_exists("TICKETS", $arResult) && is_array($arResult["TICKETS"])):
 	</div>
 		<?
 		$bFirst = false;
+		$ticketcount++;
 	endif;
 
-		$ticketcount++;
 	endforeach;
+	if($ticketcount == 0)
+		echo GetMessage("G_TICKETS_LIST_EMPTY");
+endif;
 endif;
 ?>
 </div>
 <br>
-<?=$USER->GetID();?>
-<?=$bAdmin;?>
-<?var_dump($arResult['TICKETS']);?>
